@@ -17,7 +17,7 @@ export class TrainingJournal {
   @observable public exercises!: Exercise[];
   private static key = 'exercises';
   private static versionKey = 'db_version';
-  private static version = 'v1';
+  private static version = 'v2';
 
   constructor() {
     runInAction(() => (this.exercises = []));
